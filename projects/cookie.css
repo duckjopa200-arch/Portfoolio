@@ -1,0 +1,104 @@
+/*lehe vormistus*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+	font-family: "Outfit", sans-serif;
+}
+
+body{
+ background: linear-gradient(315deg,rgba(190, 70, 150, 1) 0%, rgba(130, 70, 190, 1) 50%, rgba(60, 90, 210, 1) 100%);
+ min-height: 100vh;
+}
+
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	background: none;
+}
+'
+img{
+	width: 100%;
+}
+
+navigation .navbar{
+	background:  radial-gradient(circle,rgba(250, 205, 60, 1) 0%, rgba(250, 70, 110, 1) 100%);
+	display: flex;
+	padding: 20px;
+	align-items: center;
+	justify-content:space-between;
+	border-radius: 10px;
+
+}
+
+.navbar .nav-logo .logo-text{
+	color: white;
+}
+
+.navbar .nav-menu{
+	display: flex;
+	gap: 10px;
+}
+
+.navbar .nav-menu .nav-link{
+	padding: 10px;
+	color: white;
+	font-size: 20px;
+	background:none;
+	border-radius: 10px;
+	transition: o.5s ease;
+}
+
+.navbar .nav-menu .nav-link:hover {
+	color: white;
+	background: linear-gradient(315deg,rgba(215, 95, 175, 1) 0%, rgba(155, 95, 215, 1) 50%, rgba(85, 115, 235, 1) 100%);
+}
+
+/*sisu*/
+
+
+#aboutme{
+	color: white;
+	width: 500px;
+	height: 150px;
+	border: 5px solid whitesmoke;
+	border-radius: 10px;
+	padding: 15px;
+	margin:0;
+	margin-top: 67px;
+	background: linear-gradient(315deg,rgba(215, 95, 175, 1) 0%, rgba(155, 95, 215, 1) 50%, rgba(85, 115, 235, 1) 100%);
+}
+
+
+#cookie{
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+	font-size:40px ;
+	font-weight: bold;
+	height: 200px;
+	padding: 30px;
+	margin: 0px;
+	margin-top: 50px;
+	border: 5px solid whitesmoke;
+	border-radius: 10px;
+	background: linear-gradient(315deg,rgba(215, 95, 175, 1) 0%, rgba(155, 95, 215, 1) 50%, rgba(85, 115, 235, 1) 100%);
+}
+
+#cookieBtn{
+	 font-size: 80px;
+	 transition: transform 0.15s ease;
+}
+
+#cookieBtn:hover{
+	 transform: scale(1.2);
+
+}
