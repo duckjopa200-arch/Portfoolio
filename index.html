@@ -9,42 +9,65 @@
 	<title>Portfolio</title>
 </head>
 <body>
-	
-	<nav class="navbar">
-		<div class="nav-title">Minu portfolio</div>
-		<button class="menuBtn" id="menuBtn">
-			<span></span>
-			<span></span>
-			<span></span>
-		</button>
-	</nav>
 
-	<div class="menu" id="menu">
-		<a href="#home">Home</a>
-		<a href="#projects">Projects</a>
-		<a href="#about">About me</a>
-	</div>
+	<header>
+		<nav class="navbar">
+			<div class="nav-title">My portfolio</div>
+			<button class="menuBtn" id="menuBtn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</nav>
 
-	<div class="content">
+		<div class="menu" id="menu">
+			<a href="#home">Home</a>
+			<a href="#projects">Projects</a>
+			<a href="#about">About me</a>
+		</div>
+</header>
+
+<main class="content">
+
 	<section id="home">
-		<h2> Welcome to my portfolio</h2>
-		<p>Siin tuleb sisu sellest lehest</p>
+		<h1>Welcome to my portfolio</h1>
+		<p>This webpage was made for.. </p>
 	</section>
 
 	<section id="projects">
-		<h2>Here are my projects</h2>
+		<h1>Projects</h1>
+
+		<article class="cookie-clicker">
+		<h2>Cookie-clicker</h2>
+		<p>Cookie-clicker was my very first project, created as a college assigment.</p>
 		<a href="projects/cookie.html">
-		<button id="cookie">Cookie-clicker</button>
-	</a>
-	<a href="projects/joke.html">
-		<button id="jokeapi">JokeAPI</button>
-	</a>
+			<button id="cookieBtn">View Cookie-clicker</button>
+		</a>
+	</article>
+
+	<article class="jokeapi">
+		<h2>JokeAPI</h2>
+		<p>JokeAPI was another project created as a college assigment. In this project i used free API from <a href="https://www.freepublicapis.com/">this website</a>.</p>
+		<a href="projects/joke.html">
+			<button id="jokeapiBtn">View JokeAPI</button>
+		</a>
+	</article>
+
+	<article class="valentinesday">
+		<h2>ValentinesDay</h2>
+		<p>This project i created by myself as gift for Valentines day for my girlfriend.GIFs were taken from <a href="https://giphy.com/">this website</a>.</p>
+
+		<a href="projects/vday.html">
+			<button id="valentinesday">View Valentinesday</button>
+		</a>
 	</section>
 
 	<section id="about">
-		<h2>Here is all info about me</h2>
+		<h1>About me</h1>
 	</section>
-</div>
+
+</main>
+
 
  <script src="script.js"></script>
 </body>

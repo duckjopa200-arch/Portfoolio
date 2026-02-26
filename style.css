@@ -29,7 +29,7 @@ body{
   font-weight: bold;
 }
 
-/*Menu*/
+/*Menu button*/
 
 .menuBtn {
   background: none;
@@ -69,6 +69,8 @@ body{
 	opacity: 0;
 }
 
+/*Menu*/
+
 .menu {
   background-color: #444;
   display: none;
@@ -76,15 +78,19 @@ body{
   padding: 0;
   overflow: hidden;
 
+  text-align: center;
+
   position: fixed;
   top: 15%;
-  left: 0;
-  width: 100%;
+  right: -100%;
+  width: 20%;
   z-index: 999;
+  transition: opacity 0,5s ease;
 }
 
 .menu.active {
   display: flex;
+  right: 0;
 }
 
 .menu a {
@@ -109,12 +115,28 @@ body{
 	flex-direction: column;
 
 	margin-top: 40px;
-	padding-left: 10px;
+	padding: 10px;
 
 	background-color: #333;
 	color: white;
 }
 
-section{
-  height: 50vh;
+section {
+  height: 120vh;
+}
+
+article{
+  background: #444;
+  padding: 10px;
+  margin-top: 20px;
+}
+button{
+  background: mediumpurple;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+a{
+  color: white;
 }
