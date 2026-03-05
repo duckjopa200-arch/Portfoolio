@@ -10,9 +10,9 @@
 </head>
 <body>
 
-	<header>
+	<header id="header">
 		<nav class="navbar">
-			<div class="nav-title">My portfolio</div>
+			<div class="nav-title">Portfolio</div>
 			<button class="menuBtn" id="menuBtn">
 				<span></span>
 				<span></span>
@@ -29,17 +29,24 @@
 
 <main class="content">
 
-	<section id="home">
-		<h1>Welcome to my portfolio</h1>
-		<p>This webpage was made for.. </p>
+	<section class="blank" id="home"></section>
+
+	<section class="home">
+		<h1>Welcome to my portfolio website</h1>
+		<p class="hometext">This website presents my technical skills, programming projects, and practical experience.
+		It is currently the first version, and I plan to continuously improve and expand it as I grow as a developer. Feel free to explore my work and visit the “About Me” section to learn more.</p>
 	</section>
 
-	<section id="projects">
+	<section class="blank" id="projects"></section>
+
+	<section class="projects">
 		<h1>Projects</h1>
+		<p class="projectstext">Here you can explore my projects, created during my learning and practice. Each project showcases different skills and approaches to development.</p>
+		<p class="projectstext">To go back to the main page or the list of all projects, use the “Return back to homepage” button under each project.</p>
 
 		<article class="cookie-clicker">
 		<h2>Cookie-clicker</h2>
-		<p>Cookie-clicker was my very first project, created as a college assigment.</p>
+		<p class="projectstext">Cookie-clicker was my very first project, created as a college assigment.</p>
 		<a href="projects/cookie.html">
 			<button id="cookieBtn">View Cookie-clicker</button>
 		</a>
@@ -47,7 +54,7 @@
 
 	<article class="jokeapi">
 		<h2>JokeAPI</h2>
-		<p>JokeAPI was project created as a college assigment. In this project i used free API from <a href="https://www.freepublicapis.com/">this website</a>.</p>
+		<p class="projectstext">JokeAPI was project created as a college assigment. In this project i used free API from <a href="https://www.freepublicapis.com/">this website</a>.</p>
 		<a href="projects/joke.html">
 			<button id="jokeapiBtn">View JokeAPI</button>
 		</a>
@@ -55,7 +62,14 @@
 
 	<article class="todolist">
 		<h2>TodoList</h2>
-		<p>TodoList was a project created as a college assignment. In this project, I used my teacher’s website, <a href="https://tinkr.tech/">Tinkr</a>, to create a database and store saved data there. When you open the project, you need to enter your username. The data you save in TodoList is stored under your username. </p>
+		<p class="projectstext">
+			TodoList was developed as a college assignment. In this project, I used my teacher’s website, 
+			<a href="https://tinkr.tech/">Tinkr</a>, to create a database and store user data. 
+			When you open the project, you need to enter your username. 
+			All saved data is stored under your username.
+			Warning: Because this database method was used, stored data may disappear 24 hours after saving. However, you can save it again.
+			In the future, I plan to improve this project and create a better version.
+	</p>
 
 		<a href="projects/todo.html">
 			<button id="todoList">View TodoList</button>
@@ -64,20 +78,45 @@
 
 	<article class="valentinesday">
 		<h2>ValentinesDay</h2>
-		<p>This project i created by myself as gift for Valentines day for my girlfriend. GIFs were taken from <a href="https://giphy.com/">this website</a>.</p>
+		<p class="projectstext">This project i created by myself as gift for Valentines day for my girlfriend. GIFs were taken from <a href="https://giphy.com/">this website</a>.</p>
 
 		<a href="projects/vday.html">
-			<button id="valentinesday">View Valentinesday</button>
+			<button id="valentinesday">View ValentinesDay</button>
 		</a>
 	</article>
 
 	</section>
 
-	<section id="about">
+	<section class="blank" id="about"></section>
+
+	<section class="about">
 		<h1>About me</h1>
-	</section>
+		<article>
+		<p class="abouttext">Hi, my name is Damian. I am a first-year student in the Software Development program at Tallinna Polütehnikum, passionate about programming and creating practical projects.I am focused on learning modern web technologies and improving my problem-solving and coding skills.</p>
+
+		<p class="abouttext">I enjoy building small projects to apply what I learn in practice and to continuously grow as a developer.
+		My goal is to become a competent software developer and contribute to meaningful projects in the future.
+	</p>
+
+	<p class="abouttext">Currently, I am exploring web development, working with HTML, CSS, JavaScript, and learning backend concepts. I plan to continuously update and expand my skills as I progress through my studies.</p>
+</article>
+</section>
 
 </main>
+
+<footer>
+	<div class="footer">
+	<div class="homeicon">
+		<a href="#header">Home</a>
+	</div>
+	<div class="github">
+		<a href="https://github.com/damianadev">Github</a>
+	</div>
+	<div class="gmail">
+		<p>Gmail: damian.adamson.dev@gmail.com</p>
+</div>
+
+</footer>
 
 
  <script src="script.js"></script>

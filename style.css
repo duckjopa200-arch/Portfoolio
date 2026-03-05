@@ -1,13 +1,17 @@
 html {
   scroll-behavior: smooth;
 }
-body{
-  padding-top: 60px;
+
+html, body {
+  height: 100%;          /* body и html занимают весь экран */
+  margin: 0;             /* убираем отступы по умолчанию */
+  display: flex;
+  flex-direction: column; /* вертикально: контент сверху, футер снизу */
 }
 
 /*Navigatdiooni riba*/
 .navbar {
-  background-color: #333;
+  background-color: #222;
   color: white;
   padding: 15px 20px;
   display: flex;
@@ -72,12 +76,11 @@ body{
 /*Menu*/
 
 .menu {
-  background-color: #444;
+  background-color: #333;
   display: none;
   flex-direction: column;
   padding: 0;
   overflow: hidden;
-
   text-align: center;
 
   position: fixed;
@@ -94,15 +97,19 @@ body{
 }
 
 .menu a {
-  color: white;
   text-decoration: none;
+
   padding: 15px 20px;
-  border-bottom: 1px solid #555;
+
+  color: white;
+  border-bottom: 1px solid #333;
+
+
   transition: background-color 0.2s;
 }
 
 .menu a:hover {
-  background-color: #555;
+  background-color: #444;
 }
 
 
@@ -114,23 +121,32 @@ body{
 	justify-content: space-between;
 	flex-direction: column;
 
-	margin-top: 40px;
 	padding: 10px;
 
-	background-color: #333;
+	background-color: mediumpurple;
 	color: white;
 }
 
 section{
-  height: 50vh;
-}
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  padding-bottom: 20px;
 
-#projects{
-  height: 150vh;
+  border-radius: 5px;
+
+  background: #555;
+
+} 
+
+.blank {
+  height: 75px;
+  background: mediumpurple;
 }
 
 article{
-  background: #444;
+  background: #666;
   padding: 10px;
   margin-top: 20px;
 }
@@ -140,7 +156,56 @@ button{
   border: 1px solid black;
   border-radius: 5px;
   cursor: pointer;
+  padding: 5px;
 }
 a{
   color: white;
+}
+
+/*Sectionide sisu*/
+
+.home{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hometext{
+  margin: 0 auto;
+  flex: 1;
+  min-width: 0;
+  max-width: 50%;
+  word-break: break-word;
+  overflow-wrap: anywhere
+}
+
+.projectstext{
+  flex: 1;
+  min-width: 0;
+  max-width: 70%;
+
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.abouttext{
+  flex: 1;
+  min-width: 0;
+  max-width: 70%;
+
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+/*Footer*/
+
+.footer{
+  background-color: #222;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
 }
